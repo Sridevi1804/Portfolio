@@ -1,0 +1,339 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'poppins',sans-serif;
+    background-color: aliceblue;
+    max-width: 1400px;
+    margin: 0 auto;
+    font-family: ui-sans-serif,system-ui,sans-serif,"Apple Color Emoji","Segoe UI Emoji",Segoe UI Symbol,"Noto Color Emoji";
+}
+a{
+    text-decoration: none;
+}
+
+/*navbar section*/
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+    height: 80px;
+    position: sticky;
+    top: 0;
+}
+
+.logo{
+    font-size: 25px;
+    color: white;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+.logo:hover{
+    color: orangered;
+    transform: scale(1.1);
+}
+nav .left a span{
+    color: orangered;
+}
+
+nav .left a{
+    color:black;
+    font-size: 22px;
+    font-weight: 600;
+   
+}
+
+nav .right a{
+    color: black;
+    margin: 0 10px;
+}
+
+nav .right a:hover,a:active{
+    color: orangered;
+    border-bottom: 3px solid orangered;
+}
+
+nav .right a span{
+    margin-left: 5px;
+}
+
+
+
+/*Home section*/
+
+.home-section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+    margin: 50px 0;
+    gap: 40px;
+    margin-bottom: 100px;
+}
+
+.home-section .text{
+    flex: 5;
+}
+
+.home-section .text h2{
+    font-size: 45px;
+    color:black;
+}
+.home-section .text h2 span{
+    color: orangered;
+}
+.home-section .text p{
+    color: black;
+}
+
+.home-section .home-img{
+    flex: 2;
+    display: flex;
+    justify-content: right;
+}
+.home-section .text .links{
+    margin-top: 25px;
+}
+.home-section .text .links a{
+    display: inline-block;
+    padding: 5px 10px;
+    color:orangered;
+    background-color: white;
+    border-radius: 5px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    transition: 0.3s ease;
+}
+.home-section .text .links a:hover{
+    background-color: orangered;
+    color: white;
+}
+
+.home-section .home-img img{
+    border-radius:50%;
+    width: 350px;
+}
+
+/*skills section*/
+
+.skills-section{
+    padding: 0 50px;
+    margin-bottom: 100px;
+}
+.skills-section h2{
+    text-align: center;
+    font-size: 35px;
+    color: red;
+}
+.skills-section .text{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.skills-section .cells{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.skills-section .cells .cell{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    gap: 10px;
+    padding: 10px 20px;
+    border: 1.5px solid wheat;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+
+.skills-section .cells .cell img{
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+    border-radius: 2px;
+}
+.skills-section .cells .cell span{
+    font-size: 18px;
+}
+
+/*education section*/
+
+.education-section{
+    padding: 0 50px;
+    margin-bottom: 100px;
+}
+.education-section h2{
+    font-size: 35px;
+    margin-bottom: 30px;
+    color: orangered;
+}
+.education-section .group{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+.education-section .group .details1{
+    text-align: center;
+    flex: 2;
+}
+.education-section .group .details1 img{
+    width: 200px;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+.education-section .group .text{
+    flex: 8;
+}
+.education-section .group .details1 p{
+    font-weight: 600;
+}
+
+
+/*contact section*/
+
+.contact-section{
+    padding: 0 50px;
+    margin-bottom: 100px;
+}
+.contact-section h2{
+    font-size: 35px;
+    color: orangered;
+}
+
+.contact-section .group{
+    display: flex;
+    gap: 50px;
+}
+
+.contact-section .group .text{
+    flex: 3;
+    margin-top: 20px;
+}
+.contact-section .group form{
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-section .group form input,.contact-section .group form textarea{
+    font-family: 'poppins',sans-serif;
+    border: 2px solid orangered;
+    background-color: transparent;
+    padding: 10px;
+    margin-bottom: 15px;
+    outline: none;
+    resize: none;
+}
+
+.contact-section .group form button{
+    font-size: 16px;
+    color: white;
+    font-family: 'poppins',sans-serif;
+    background-color:orangered;
+    border: none;
+    height: 50px;
+    cursor: pointer;
+    transition: .1s;
+}
+
+.contact-section .group form button:hover{
+    filter: brightness(.9);
+}
+
+
+/*responsive nav bar*/
+
+@media(max-width: 600px){
+    nav{
+        padding: 0 20px;
+    }
+    nav .right a{
+        font-size: 22px;
+    }
+    nav .right a span{
+        display: none;
+    }
+
+
+    /*home section*/
+    .home-section{
+        padding: 0 20px;
+    }
+    .home-section .text h2{
+        font-size: 30px;
+    }
+
+    /*skills section*/
+    .skills-section{
+        padding: 0 20px;
+    }
+    .skills-section .cells .cell span{
+        font-size: 16px;
+    }
+
+    /*education-section*/
+    .education-section{
+        padding: 0 20px;
+    }
+
+    /*contact-section*/
+
+    .contact-section{
+        padding: 0 20px;
+    }
+}
+
+
+ 
+
+@media(max-width:850px){
+    /*home section*/
+
+    .home-section .text h2{
+        font-size: 35px;
+    }
+}
+
+
+@media(max-width:740px){
+    /*home section*/
+    .home-section{
+       flex-direction: column-reverse;
+    }
+    .home-section .home-img img{
+        width: 300px;
+    }
+    
+}
+
+@media(max-width:870px){
+     /*coontact section*/
+    .contact-section .group{
+        flex-direction: column;
+    }
+    
+}
+
+
+@media(max-width:1130px){
+    /*education section*/
+
+    .education-section{
+        text-align: center;
+    }
+    .education-section .group{
+        flex-direction: column;
+    }
+}
